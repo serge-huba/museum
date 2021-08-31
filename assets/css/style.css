@@ -26,15 +26,24 @@
      margin: 0 auto;
  }
 
- /*Стили для всех заголовков секций*/
-
- .section__title {
+ .section {
+     margin-bottom: 75px;
      font-family: Forum;
      font-style: normal;
      font-weight: normal;
      letter-spacing: 5px;
      text-transform: uppercase;
  }
+
+ /*Стили для всех заголовков секций*/
+
+ /* .section__title {
+     font-family: Forum;
+     font-style: normal;
+     font-weight: normal;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+ } */
 
  /*ALL STYLES END */
 
@@ -84,18 +93,20 @@
 
  /* WELCOM STYLES START********************************************************* */
 
- .welcom-section {
-     height: 750px;
+ .welcome-section {
+     /* height: 750px; */
      background-color: #030303;
      background-image: url(../img/background.jpg);
      background-repeat: no-repeat;
      background-position: right bottom;
      padding-top: 114px;
+     padding-bottom: 246px;
+     /* margin-bottom: 75px; */
  }
 
  
 
- .welcom-section__title {
+ .welcome-section__title {
      font-size: 80px;
      line-height: 90px;
      /* identical to box height, or 112% */
@@ -103,7 +114,7 @@
      padding-bottom: 26px;
  }
 
- .welcom-louvre__description {
+ .welcome-section__description {
      font-family: Roboto;
      font-style: normal;
      font-weight: 300;
@@ -115,7 +126,7 @@
      padding-bottom: 76px;
  }
 
- .welcom__button {
+ .welcome__button {
      display: block;
      /* position: relative; */
      width: 360px;
@@ -135,14 +146,14 @@
      padding: 25px;
  }
 
- .welcom-louvre__button--name {
+ /* .welcome-louvre__button--name {
      position: absolute;
      top: 25px;
-     left: 75px;
-     /* margin-top: -0.625em; */
- }
+     left: 75px; */
+     /* margin-top: -0.625em; 
+ }*/
 
- .welcom__button:hover {
+ .welcome__button:hover {
      background-color: #9D8665;
  }
 
@@ -155,15 +166,16 @@
  
 } */
 
- .section--virtual-tour {
+ /* .section--virtual-tour {
      padding: 90px 0 75px;
- }
+ } */
 
  /* VISITING STYLES START*************************************************************** */
 
  .visiting-section {
-     height: 1265px;
-     padding: 75px;
+     /* height: 1265px; */
+     /* padding: 75px; */
+     /* margin-bottom: 75px; */
  }
 
  .visiting-section__title {
@@ -201,6 +213,10 @@
 
  .virtual-tour__item--no-margin {
      margin-right: 0;
+ }
+
+ .virtual-tour__item--no-margin--bottom {
+     margin-bottom: 0;
  }
 
  .virtual-tour__title {
@@ -264,18 +280,19 @@ left: 0; */
  /*   EXPLORE  STYLES START************************************************************* */
 
  .explore-section {
-     height: 865px;
+     /* height: 865px; */
      background-color: #030303;
-     padding: 75px 0 75px 0;
+     /* margin-bottom: 75px; */
+     /* padding: 75px 0 75px 0; */
      /* background-image: url(../img/background.jpg); 
 background-repeat: no-repeat;
 background-position: right bottom;
 /* padding-top: 114px; */
  }
 
- /* .picture-explore {
- /* padding: 75px 0 0 0; 
-} */
+  .picture-explore {
+ padding: 75px 0 75px 0; 
+} 
 
  .picture-explore__list {
      display: flex;
@@ -330,8 +347,10 @@ left: 0; */
  /*   VIDEO  STYLES START */
 
  .video-section {
-     padding: 90px 0 0 0;
-     height: 1009px;
+     margin: 75px 0 75px 0;
+
+     /* padding: 90px 0 0 0; */
+     /* height: 1009px; */
  }
 
  .video-journey__list {
@@ -366,9 +385,10 @@ left: 0; */
  /* TICKETS  STYLES START *****************************************************  */
 
  .tickets-section {
-     height: 893px;
+     /* height: 893px; */
      background: #030303;
      padding: 75px 0 75px 0;
+     /* margin-bottom: 75px; */
  }
 
  .tickets-section__title {
@@ -632,9 +652,10 @@ color: #000000;
  /* CONTACTS  STYLES START *****************************************************  */
   
   .contacts-section {
-    height: 963px;
+    /* height: 963px; */
     background: #ffffff;
-    padding: 75px 0 60px 0;
+    /* padding: 75px 0 60px 0; */
+    /* margin-bottom: 75px; */
 }
 
   .contacts-section__title {
