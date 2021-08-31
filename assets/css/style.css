@@ -28,22 +28,18 @@
 
  .section {
      margin-bottom: 75px;
+     
+ }
+
+ /*Стили для всех заголовков секций*/
+
+ .section__title {
      font-family: Forum;
      font-style: normal;
      font-weight: normal;
      letter-spacing: 5px;
      text-transform: uppercase;
  }
-
- /*Стили для всех заголовков секций*/
-
- /* .section__title {
-     font-family: Forum;
-     font-style: normal;
-     font-weight: normal;
-     letter-spacing: 5px;
-     text-transform: uppercase;
- } */
 
  /*ALL STYLES END */
 
