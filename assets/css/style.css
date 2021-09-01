@@ -33,7 +33,7 @@
 
  /*Стили для всех заголовков секций*/
 
- .section__title {
+ .section-title {
      font-family: Forum;
      font-style: normal;
      font-weight: normal;
@@ -122,7 +122,7 @@
      padding-bottom: 76px;
  }
 
- .welcome__button {
+ .welcome-section__button {
      display: block;
      /* position: relative; */
      width: 360px;
