@@ -2,329 +2,267 @@
  
  /*ALL STYLES START************************************************************** */
 
- html {
-     box-sizing: border-box;
- }
+html {
+    box-sizing: border-box;
+}
 
  *, *::before, *::after {
-     box-sizing: inherit;
- }
+    box-sizing: inherit;
+}
 
- body {
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     line-height: 1.2;
-     font-size: 16px;
-     color: #000000;
- }
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 16px;
+    color: #000000;
+}
 
  /* Контейнер - <div class="container"> размещается внутри каждого блока и каждой секции. Его задача - центрировать содержимое и ограничить его ширину. */
 
- .container {
-     max-width: 1440px;
-     margin: 0 auto;
- }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
 
- .section {
-     margin-bottom: 75px;
+.section {
+     /* margin-bottom: 75px; */
+    padding: 75px 0 75px 0;
      
- }
+}
 
  /*Стили для всех заголовков секций*/
 
- .section-title {
-     font-family: Forum;
-     font-style: normal;
-     font-weight: normal;
-     letter-spacing: 5px;
-     text-transform: uppercase;
- }
+.section-title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 90px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.section-title--gold {
+    position: relative;
+    
+    color: #9D8665;
+}
 
  /*ALL STYLES END */
 
  /* HEADER STYLES START */
 
- .header {
-     /* width: 100%; */
-     /* height: 200px; */
+.header {
+     
      background-color: #030303;
      padding-bottom: 76px;
- }
+}
 
- .header__wrapper {
-     display: flex;
-     flex-wrap: wrap;
-     /* align-items: flex-end; */
-     justify-content: space-between;
-     padding-top: 74px;
- }
+.header__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 74px;
+}
 
- .top-menu__list {
-     display: flex;
-     flex-wrap: wrap;
- }
+.top-menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
- .top-menu__item {
-     margin-right: 76px;
- }
+.top-menu__item {
+    margin-right: 76px;
+}
 
- .top-menu__item:last-child {
+.top-menu__item:last-child {
      margin-right: 0;
- }
+}
 
- .top-menu__link {
+.top-menu__link {
      font-size: 22px;
      line-height: 50px;
      letter-spacing: 2px;
      color: #FFFFFF;
      text-decoration: none;
- }
+}
 
- .top-menu__link:hover, .header__item-link:active {
+.top-menu__link:hover, .header__item-link:active {
      color: #9D8665;
- }
+}
 
  /* HEADER STYLES END */
 
  /* WELCOM STYLES START********************************************************* */
 
- .welcome-section {
-     /* height: 750px; */
+.welcome-section {
      background-color: #030303;
      background-image: url(../img/background.jpg);
      background-repeat: no-repeat;
      background-position: right bottom;
-     padding-top: 114px;
+        padding-top: 114px;
      padding-bottom: 246px;
-     /* margin-bottom: 75px; */
- }
+}
+
+.welcome-section__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin-top: 26px;
+    padding-bottom: 76px;
+}
+
+.welcome-section__button {
+    display: block;
+    width: 360px;
+    height: 75px;
+    background-color: #710707;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 15px;
+    border: none;
+    text-decoration: none;
+    padding: 25px;
+}
 
  
 
- .welcome-section__title {
-     font-size: 80px;
-     line-height: 90px;
-     /* identical to box height, or 112% */
-     color: #ffffff;
-     padding-bottom: 26px;
- }
-
- .welcome-section__description {
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     font-size: 28px;
-     line-height: 33px;
-     /* identical to box height */
-     letter-spacing: 2px;
-     color: #ffffff;
-     padding-bottom: 76px;
- }
-
- .welcome-section__button {
-     display: block;
-     /* position: relative; */
-     width: 360px;
-     height: 75px;
-     background-color: #710707;
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     font-size: 22px;
-     line-height: 26px;
-     letter-spacing: 2px;
-     text-align: center;
-     color: #FFFFFF;
-     border-radius: 15px;
-     border: none;
-     text-decoration: none;
-     padding: 25px;
- }
-
- /* .welcome-louvre__button--name {
-     position: absolute;
-     top: 25px;
-     left: 75px; */
-     /* margin-top: -0.625em; 
- }*/
-
- .welcome__button:hover {
+.welcome__button:hover {
      background-color: #9D8665;
- }
+}
 
  /* WELCOM STYLES END */
 
  /* VISITING STYLES START */
 
- /* .section {
- padding: 75px 0;
  
-} */
 
- /* .section--virtual-tour {
-     padding: 90px 0 75px;
- } */
+ 
+.section-title--gold::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
 
- /* VISITING STYLES START*************************************************************** */
+.virtual-tour__list {
+    display: flex;
+    flex-wrap: wrap;
+    /* column-gap: 60px;  */
+}
 
- .visiting-section {
-     /* height: 1265px; */
-     /* padding: 75px; */
-     /* margin-bottom: 75px; */
- }
+.virtual-tour__item {
+    margin-right: 60px;
+    margin-bottom: 78px;
+}
 
- .visiting-section__title {
-     position: relative;
-     font-size: 80px;
-     line-height: 90px;
-     color: #9D8665;
- }
+.virtual-tour__item--no-margin {
+    margin-right: 0;
+}
 
- .visiting-section__title::after {
-     content: "";
-     /* position: absolute; */
-     /* top: 0; */
-     /* bottom: 0;
- left: 0; */
-     width: 100%;
-     height: 3px;
-     background-color: #710707;
-     display: block;
-     /* right: 0;*/
-     margin: 25px 0 75px 0;
- }
+.virtual-tour__item--no-margin--bottom {
+    margin-bottom: 0;
+}
 
- .virtual-tour__list {
-     display: flex;
-     flex-wrap: wrap;
-     /* row-gap: 78px;
- column-gap: 60px; */
- }
-
- .virtual-tour__item {
-     margin-right: 60px;
-     margin-bottom: 78px;
- }
-
- .virtual-tour__item--no-margin {
-     margin-right: 0;
- }
-
- .virtual-tour__item--no-margin--bottom {
-     margin-bottom: 0;
- }
-
- .virtual-tour__title {
-     font-family: Forum;
-     font-style: normal;
-     font-weight: normal;
-     font-size: 32px;
-     line-height: 35px;
-     letter-spacing: 5px;
-     text-transform: uppercase;
-     margin: 25px 0 0 0;
-     color: #000000;
- }
+.virtual-tour__title {
+    font-family: Forum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 35px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 25px 0 0 0;
+    color: #000000;
+}
 
  .virtual-tour__link {
-     display: block;
- }
+    display: block;
+}
 
- .virtual-tour__paragraf-first {
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     font-size: 22px;
-     line-height: 26px;
-     /* identical to box height */
-     color: #000000;
-     /* margin: 10px 0 0 0; */
- }
+.virtual-tour__paragraf-first {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+}
 
- .virtual-tour__desctiprion {
+.virtual-tour__desctiprion {
      margin: 10px 0 0 0;
- }
+}
 
- .virtual-tour__title::after {
-     content: "";
-     /* position: absolute; */
-     /* top: 0; */
-     /* bottom: 0;
-left: 0; */
-     width: 300px;
-     height: 2px;
-     background-color: #710707;
-     display: block;
-     /* right: 0;*/
-     margin: 9px 0 10px 0;
- }
+.virtual-tour__title::after {
+    content: "";
+    width: 300px;
+    height: 2px;
+    background-color: #710707;
+    display: block;
+    margin: 9px 0 10px 0;
+}
 
- .virtual-tour__paragraf-second {
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     font-size: 18px;
-     line-height: 21px;
-     /* identical to box height */
-     color: #000000;
-     margin: 10px 0 0 0;
- }
+.virtual-tour__paragraf-second {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    margin: 10px 0 0 0;
+}
 
  /* VISITING STYLES END */
 
  /*   EXPLORE  STYLES START************************************************************* */
 
- .explore-section {
-     /* height: 865px; */
-     background-color: #030303;
-     /* margin-bottom: 75px; */
-     /* padding: 75px 0 75px 0; */
-     /* background-image: url(../img/background.jpg); 
-background-repeat: no-repeat;
-background-position: right bottom;
-/* padding-top: 114px; */
- }
+.explore-section {
+    background-color: #030303;
+}
 
-  .picture-explore {
- padding: 75px 0 75px 0; 
-} 
-
- .picture-explore__list {
+.picture-explore__list {
      display: flex;
- }
+}
 
- .picture-exlore__item {
+.picture-exlore__item {
      height: 715px;
      width: 720px;
- }
+}
 
- .explore-section__title {
-     /* position: relative; */
-     font-size: 80px;
-     line-height: 90px;
-     color: #FFFFFF;
- }
+.explore-section__title {
+    font-size: 80px;
+    line-height: 90px;
+    color: #FFFFFF;
+}
 
- .explore-section__title::after {
-     content: "";
-     /* position: absolute; */
-     /* top: 0; */
-     /* bottom: 0;
-left: 0; */
-     width: 92%;
-     height: 3px;
-     background-color: #710707;
-     display: block;
-     /* right: 0;*/
-     margin: 25px 0 75px 0;
- }
+.explore-section__title::after {
+    content: "";
+    width: 92%;
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
 
- .picture-explore__icon {
+.picture-explore__icon {
      margin-top: 10px;
- }
+}
 
- .picture-explore__paragrafs {
+.picture-explore__paragrafs {
      font-family: Roboto;
      font-style: normal;
      font-weight: 300;
@@ -332,40 +270,40 @@ left: 0; */
      line-height: 38px;
      margin-bottom: 25px;
      color: #FFFFFF;
- }
+}
 
- .picture-explore__pick-out {
+.picture-explore__pick-out {
      color: #CAAA7D;
- }
+}
 
  /*   EXPLORE  STYLES END */
 
  /*   VIDEO  STYLES START */
 
- .video-section {
-     margin: 75px 0 75px 0;
+.video-section {
+     /* margin: 75px 0 75px 0; */
 
      /* padding: 90px 0 0 0; */
      /* height: 1009px; */
- }
+}
 
- .video-journey__list {
+.video-journey__list {
      display: flex;
      justify-content: space-between;
- }
+}
 
- .video-journey__title {
+ /* .video-journey__title {
      font-size: 80px;
      line-height: 90px;
      color: #9D8665;
      width: 606px;
- }
+ } */
 
- .video-section__picture {
+.video-section__picture {
      margin-bottom: 40px;
- }
+}
 
- .video-journey__description {
+.video-journey__description {
      font-family: Roboto;
      font-style: normal;
      font-weight: 300;
@@ -374,77 +312,60 @@ left: 0; */
      color: #000000;
      width: 720px;
      padding: 5px 0 0 0;
- }
+}
 
  /*   VIDEO  STYLES END */
 
  /* TICKETS  STYLES START *****************************************************  */
 
- .tickets-section {
+.tickets-section {
      /* height: 893px; */
      background: #030303;
      padding: 75px 0 75px 0;
      /* margin-bottom: 75px; */
- }
+}
 
- .tickets-section__title {
+.tickets-section__title {
      font-size: 80px;
      line-height: 90px;
      color: #FFFFFF;
- }
+}
 
- .tickets-section__title::after {
-     content: "";
-     /* position: absolute; */
-     /* top: 0; */
-     /* bottom: 0;
-left: 0; */
-     /* width: 92%; */
-     height: 3px;
-     background-color: #710707;
-     display: block;
-     /* right: 0;*/
-     margin: 25px 0 75px 0;
- }
+.tickets-section__title::after {
+    content: "";
+    height: 3px;
+    background-color: #710707;
+    display: block;
+    margin: 25px 0 75px 0;
+}
 
- /* .by-tickets__radio {
-     font-family: Roboto;
-     font-style: normal;
-     font-weight: 300;
-     font-size: 22px;
-     line-height: 26px;
-     /* identical to box height 
-     color: #FFFFFF;
- } */
-
- .by-tickets__title {
+.by-tickets__title {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
-    
     margin-bottom: 11px;
     color: #FFFFFF;
- }
+}
 
- h4.by-tickets__title {
+h4.by-tickets__title {
      text-align: right;
- }
+}
 
- .by-tickets__list {
+.by-tickets__list {
      display: flex;
      justify-content: space-between;
      align-items: flex-start;
- }
+}
 
- .by-tickets__ticket-type {
+.by-tickets__ticket-type {
      margin-left: -207px;
- }
+}
 
- .by-tickets__name-radio {
+.by-tickets__name-radio {
      margin-bottom: 50px;
- }
+}
 
                               /*СТИЛИЗАЦИЯ РАДИО- КНОПОК**************/
 
@@ -453,7 +374,6 @@ left: 0; */
     display: block; 
     position: relative;
     padding-left: 35px;
-    /* margin-bottom: 12px; */
     cursor: pointer;/*при наведении на элемент курсор меняет свой вид как у ссылки (рука), но при этом естественно не становиться ссылкой , а просто привлекает внимание */
     font-size: 22px;
     -webkit-user-select: none;
@@ -488,17 +408,17 @@ left: 0; */
   }
   
   /* On mouse-over, add a grey background color */
-  .by-tickets__radio:hover input ~ .by-tickets__checkmark {/*все span-ы идущие за input-ом вложенным в label в состоянии :hover задаем цвет*/
+.by-tickets__radio:hover input ~ .by-tickets__checkmark {/*все span-ы идущие за input-ом вложенным в label в состоянии :hover задаем цвет*/
     background-color: #e6dede;
   }
   
   /* When the radio button is checked, add a blue background */
-  .by-tickets__radio input:checked ~ .by-tickets__checkmark {/*всем span-ам идущим за инпутом вложенным в label в состоянии :checked задаем цвет */
-    /* background-color: #2196F3; */
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .by-tickets__checkmark:after {/*пока радио-инпут не нажат у элемента работает display: none; */
+.by-tickets__radio input:checked ~ .by-tickets__checkmark {/*всем span-ам идущим за инпутом вложенным в label в состоянии :checked задаем цвет */
+/* background-color: #2196F3; */
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.by-tickets__checkmark:after {/*пока радио-инпут не нажат у элемента работает display: none; */
     content: "";
     position: absolute;
     /* display: none; */
@@ -514,12 +434,12 @@ left: 0; */
   .by-tickets__radio .by-tickets__checkmark:after {/*а эти свойства работают всегда , просто когда включена радио кнопка работает display: block; и мы видим нащ белый диск*/
     /* display: block; */
     position: absolute;
-       top: 1.4px;
-      left: 1.2px;
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
-      background: #000000;
+    top: 1.4px;
+    left: 1.2px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #000000;
   }
 
   .by-tickets__radio input:checked ~ .by-tickets__checkmark--checked {
@@ -535,33 +455,30 @@ left: 0; */
         /*СТИЛИЗАЦИЯ РАДИО- КНОПОК---END**************/
 
 
- .by-tickets__description { 
-font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 26px;
-color: #FFFFFF;
-margin-bottom: 14px;
- }
+.by-tickets__description { 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+    margin-bottom: 14px;
+}
 
- .number {
+.number {
     all: unset;
     /* width: 114px; */
     text-align: center;
     font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 26px;
-/* identical to box height */
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
 
-text-align: center;
-
-color: #FFFFFF;
-  }
-
-  .by-tickets__button {
+.by-tickets__button {
       display: flex;
       justify-content: space-between;
       /* align-items: stretch; */
@@ -569,108 +486,80 @@ color: #FFFFFF;
     width: 150px;
     height: 50px;
     margin-bottom: 35px;
-  }
+}
 
-  button {
-      background-color: #000000;
-      width: 18px;
-      /* height: 38px; */
-      font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 32px;
-line-height: 37px;
-/* margin-bottom: 4px; */
-/* identical to box height */
-
-text-align: center;
-
-color: #FFFFFF;
-  }
-  .button_plus {
-     margin-right: 6px;
-  }
+button {
+    background-color: #000000;
+    width: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
   
-  .button_minus {
+.button_plus {
+     margin-right: 6px;
+}
+  
+.button_minus {
       margin-left: 6px;
 
-  }
+}
 
-  .by-tickets__two-minus {
+.by-tickets__two-minus {
       margin-left: -1px;
-  }
+}
 
-  .by-tickets__description-price {
+.by-tickets__description-price {
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
     line-height: 33px;
-    /* identical to box height */
-    
     letter-spacing: 1.65px;
     margin-top: 50px;
-    
     color: #FFFFFF;
-  }
+}
 
-  .by-now {
+.by-now {
     position: absolute;
     top: 392px;
     width: 175px;
     height: 50px;
     left: -22px;
-    
-
     font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 26px;
-/* display: flex; */
-/* align-items: center; */
-text-align: center;
-letter-spacing: 2px;
-
-color: #000000;
-    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #000000;
     background: #FFFFFF;
     border-radius: 2px;
-  }
+}
 
-  .by-tickets__amaont {
+.by-tickets__amaont {
       position: relative;
-  }
+}
   
   
   /*   TICKETS  STYLES END */
 
  /* CONTACTS  STYLES START *****************************************************  */
   
-  .contacts-section {
-    /* height: 963px; */
+.contacts-section {
     background: #ffffff;
-    /* padding: 75px 0 60px 0; */
-    /* margin-bottom: 75px; */
-}
-
-  .contacts-section__title {
-    font-size: 80px;
-    line-height: 90px;
-    color: #9D8665;
 }
 
 .contacts-section__title::after {
     content: "";
-    /* position: absolute; */
-    /* top: 0; */
-    /* bottom: 0;
-left: 0; */
-    /* width: 92%; */
     height: 3px;
     background-color: #710707;
     display: block;
-    /* right: 0;*/
     margin: 25px 0 75px 0;
 }
 
@@ -680,15 +569,12 @@ left: 0; */
 }
 
 .by-contacts__title {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: 500;
 font-size: 28px;
 line-height: 33px;
-/* identical to box height */
 margin-bottom: 36px;
-
-
 color: #000000;
 }
 
@@ -697,12 +583,11 @@ color: #000000;
 }
 
 .by-contacts__description {
-    font-family: Roboto;
+font-family: Roboto;
 font-style: normal;
 font-weight: 300;
 font-size: 22px;
 line-height: 26px;
-/* identical to box height */
 margin-bottom: 20px;
 color: #000000;
 }
@@ -714,7 +599,6 @@ color: #000000;
 .footer {
     height: 300px;
     background-color: rgb(0, 0, 0);
-    padding: 75px 0;
 }
 
 .footer__wrapper {
@@ -725,7 +609,6 @@ color: #000000;
 .footer__logo {
     width: 340px;
     height: 150px;
-    /* padding-top: 15px; */
 }
 
 .footer__nav {
@@ -749,21 +632,14 @@ color: #000000;
 }
 
 .footer__item-link {
-font-family: Roboto;
-font-style: normal;
-font-weight: 300;
-font-size: 22px;
-line-height: 50px;
-/* identical to box height, or 227% */
-
-letter-spacing: 2px;
-
-color: #FFFFFF;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
 }
 
 
 
-
-  
-
-  
