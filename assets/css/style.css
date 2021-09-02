@@ -143,9 +143,9 @@ body {
      background-color: #9D8665;
 }
 
- /* WELCOM STYLES END */
+ /* WELCOM STYLES END *****************************************/
 
- /* VISITING STYLES START */
+ /* VISITING STYLES START *********************************/
 
  
 
@@ -170,11 +170,11 @@ body {
     margin-bottom: 78px;
 }
 
-.virtual-tour__item--no-margin {
+.virtual-tour__item--right {
     margin-right: 0;
 }
 
-.virtual-tour__item--no-margin--bottom {
+.virtual-tour__item--bottom {
     margin-bottom: 0;
 }
 
@@ -194,13 +194,14 @@ body {
     display: block;
 }
 
-.virtual-tour__paragraf-first {
+.virtual-tour__paragrafs {
     font-family: Roboto;
     font-style: normal;
     font-weight: 300;
+    color: #000000;
     font-size: 22px;
     line-height: 26px;
-    color: #000000;
+    
 }
 
 .virtual-tour__desctiprion {
@@ -216,13 +217,9 @@ body {
     margin: 9px 0 10px 0;
 }
 
-.virtual-tour__paragraf-second {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 300;
+.virtual-tour__paragraf--second {
     font-size: 18px;
     line-height: 21px;
-    color: #000000;
     margin: 10px 0 0 0;
 }
 
@@ -238,9 +235,8 @@ body {
      display: flex;
 }
 
-.picture-exlore__item {
-     height: 715px;
-     width: 720px;
+.picture-explore__item {
+    padding-left: 60px;
 }
 
 .explore-section__title {
@@ -251,14 +247,14 @@ body {
 
 .explore-section__title::after {
     content: "";
-    width: 92%;
+    width: 100%;
     height: 3px;
     background-color: #710707;
     display: block;
     margin: 25px 0 75px 0;
 }
 
-.picture-explore__icon {
+.picture-explore__image {
      margin-top: 10px;
 }
 
@@ -268,8 +264,11 @@ body {
      font-weight: 300;
      font-size: 22px;
      line-height: 38px;
-     margin-bottom: 25px;
      color: #FFFFFF;
+}
+
+.picture-explore__paragraf {
+    margin-bottom: 25px;
 }
 
 .picture-explore__pick-out {
@@ -279,31 +278,23 @@ body {
  /*   EXPLORE  STYLES END */
 
  /*   VIDEO  STYLES START */
-
-.video-section {
-     /* margin: 75px 0 75px 0; */
-
-     /* padding: 90px 0 0 0; */
-     /* height: 1009px; */
-}
-
-.video-journey__list {
+.journey-video__list {
      display: flex;
      justify-content: space-between;
 }
 
- /* .video-journey__title {
+.journey-video__title {
      font-size: 80px;
      line-height: 90px;
      color: #9D8665;
      width: 606px;
- } */
+}
 
-.video-section__picture {
+.journey-video__picture {
      margin-bottom: 40px;
 }
 
-.video-journey__description {
+.journey-video__description {
      font-family: Roboto;
      font-style: normal;
      font-weight: 300;
