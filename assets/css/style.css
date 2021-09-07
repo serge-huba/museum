@@ -1,0 +1,596 @@
+ /*ALL STYLES START************************************************************** */
+
+ html {
+     box-sizing: border-box;
+ }
+
+ *, *::before, *::after {
+     box-sizing: inherit;
+ }
+
+ body {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     line-height: 1.2;
+     font-size: 16px;
+     color: #000000;
+ }
+
+ /* Контейнер - <div class="container"> размещается внутри каждого блока и каждой секции. Его задача - центрировать содержимое и ограничить его ширину. */
+
+ .container {
+     max-width: 1440px;
+     margin: 0 auto;
+ }
+
+ .section {
+     /* margin-bottom: 75px; */
+     padding: 75px 0 75px 0;
+ }
+
+ /*Стили для всех заголовков секций*/
+
+ .section__title {
+     font-family: Forum;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 80px;
+     line-height: 90px;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+     color: #ffffff;
+ }
+
+ .section__title--gold {
+     position: relative;
+     color: #9D8665;
+ }
+
+ .section__title--gold::after {
+     content: "";
+     width: 100%;
+     height: 3px;
+     background-color: #710707;
+     display: block;
+     margin: 25px 0 75px 0;
+ }
+
+ /*ALL STYLES END */
+
+ /* HEADER STYLES START */
+
+ .header {
+     background-color: #030303;
+     padding-bottom: 76px;
+ }
+
+ .header__wrapper {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding-top: 74px;
+ }
+
+ .top-menu__list {
+     display: flex;
+     flex-wrap: wrap;
+ }
+
+ .top-menu__item {
+     margin-right: 76px;
+ }
+
+ .top-menu__item:last-child {
+     margin-right: 0;
+ }
+
+ .top-menu__link {
+     font-size: 22px;
+     line-height: 50px;
+     letter-spacing: 2px;
+     color: #FFFFFF;
+     text-decoration: none;
+ }
+
+ .top-menu__link:hover, .header__item-link:active {
+     color: #9D8665;
+ }
+
+ /* HEADER STYLES END */
+
+ /* WELCOM STYLES START********************************************************* */
+
+ .welcome-section {
+     background-color: #030303;
+     background-image: url(../img/background.jpg);
+     background-repeat: no-repeat;
+     background-position: right bottom;
+     padding-top: 114px;
+     padding-bottom: 246px;
+ }
+
+ .welcome-section__description {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 28px;
+     line-height: 33px;
+     letter-spacing: 2px;
+     color: #ffffff;
+     margin-top: 26px;
+     padding-bottom: 76px;
+ }
+
+ .welcome-section__button {
+     display: block;
+     width: 360px;
+     height: 75px;
+     background-color: #710707;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 26px;
+     letter-spacing: 2px;
+     text-align: center;
+     color: #FFFFFF;
+     border-radius: 15px;
+     border: none;
+     text-decoration: none;
+     padding: 25px;
+ }
+
+ .welcome__button:hover {
+     background-color: #9D8665;
+ }
+
+ /* WELCOM STYLES END *****************************************/
+
+ /* VISITING STYLES START *********************************/
+
+ .virtual-tour__list {
+     display: flex;
+     flex-wrap: wrap;
+     /* column-gap: 60px;  */
+ }
+
+ .virtual-tour__item {
+     margin-right: 60px;
+     margin-bottom: 78px;
+ }
+
+ .virtual-tour__item--right {
+     margin-right: 0;
+ }
+
+ .virtual-tour__item--bottom {
+     margin-bottom: 0;
+ }
+
+ .virtual-tour__title {
+     font-family: Forum;
+     font-style: normal;
+     font-weight: normal;
+     font-size: 32px;
+     line-height: 35px;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+     margin: 25px 0 0 0;
+     color: #000000;
+ }
+
+ .virtual-tour__link {
+     display: block;
+ }
+
+ .virtual-tour__paragraf {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     color: #000000;
+     font-size: 22px;
+     line-height: 26px;
+ }
+
+ .virtual-tour__paragraf--second {
+     font-size: 18px;
+     line-height: 21px;
+     margin: 10px 0 0 0;
+ }
+
+ .virtual-tour__desctiprion {
+     margin: 10px 0 0 0;
+ }
+
+ .virtual-tour__title::after {
+     content: "";
+     width: 300px;
+     height: 2px;
+     background-color: #710707;
+     display: block;
+     margin: 9px 0 10px 0;
+ }
+
+ /* VISITING STYLES END */
+
+ /*   EXPLORE  STYLES START************************************************************* */
+
+ .explore-section {
+     background-color: #030303;
+ }
+
+ .picture-explore__list {
+     display: flex;
+ }
+
+ .picture-explore__item {
+     padding-left: 60px;
+ }
+
+ .explore-section__title {
+     font-size: 80px;
+     line-height: 90px;
+     color: #FFFFFF;
+ }
+
+ .explore-section__title::after {
+     content: "";
+     width: 100%;
+     height: 3px;
+     background-color: #710707;
+     display: block;
+     margin: 25px 0 75px 0;
+ }
+
+ .picture-explore__image {
+     margin-top: 10px;
+ }
+
+ .picture-explore__paragraf {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 38px;
+     color: #FFFFFF;
+     margin-bottom: 25px;
+ }
+
+ .picture-explore__pick-out {
+     color: #CAAA7D;
+ }
+
+ /*   EXPLORE  STYLES END */
+
+ /*   VIDEO  STYLES START */
+
+ .journey-video__list {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .journey-video__title {
+     font-size: 80px;
+     line-height: 90px;
+     color: #9D8665;
+     width: 606px;
+ }
+
+ .journey-video__picture {
+     margin-bottom: 40px;
+ }
+
+ .journey-video__description {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 38px;
+     color: #000000;
+     width: 720px;
+     padding: 5px 0 0 0;
+ }
+
+ /*   VIDEO  STYLES END */
+
+ /* TICKETS  STYLES START *****************************************************  */
+
+ .tickets-section {
+     background: #030303;
+     padding: 75px 0 75px 0;
+ }
+
+ .tickets-section__title {
+     font-size: 80px;
+     line-height: 90px;
+     color: #FFFFFF;
+ }
+
+ .tickets-section__title::after {
+     content: "";
+     height: 3px;
+     background-color: #710707;
+     display: block;
+     margin: 25px 0 75px 0;
+ }
+
+ .by-tickets__title {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 33px;
+     margin-bottom: 11px;
+     color: #FFFFFF;
+ }
+
+ h4.by-tickets__title {
+     text-align: right;
+ }
+
+ .by-tickets__list {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+
+ .by-tickets__ticket-type {
+     margin-left: -207px;
+ }
+
+ .by-tickets__name-radio {
+     margin-bottom: 50px;
+ }
+
+ /*СТИЛИЗАЦИЯ РАДИО- КНОПОК**************/
+
+ .by-tickets__radio {
+     display: block;
+     position: relative;
+     padding-left: 35px;
+     cursor: pointer;
+     font-size: 22px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+     font-family: Roboto;
+     color: #FFFFFF;
+ }
+
+ .by-tickets__radio input {
+     position: absolute;
+     opacity: 0;
+     cursor: pointer;
+ }
+
+ .by-tickets__checkmark {
+     position: absolute;
+     top: 3px;
+     left: 0;
+     height: 18px;
+     width: 18px;
+     background-color: #ffffff;
+     border-radius: 50%;
+ }
+
+ .by-tickets__radio:hover input~.by-tickets__checkmark {
+     background-color: #e6dede;
+ }
+
+ .by-tickets__checkmark:after {
+     content: "";
+     position: absolute;
+     display: block;
+ }
+
+ .by-tickets input:checked~.by-tickets__checkmark:after {
+     display: block;
+ }
+
+ .by-tickets__radio .by-tickets__checkmark:after {
+     position: absolute;
+     top: 2px;
+     left: 2px;
+     width: 14px;
+     height: 14px;
+     border-radius: 50%;
+     background: #000000;
+ }
+
+ .by-tickets__radio input:checked~.by-tickets__checkmark--checked {
+     position: absolute;
+     top: 9px;
+     left: 5.5px;
+     height: 6px;
+     width: 6px;
+     background-color: #ffffff;
+     border-radius: 50%;
+ }
+
+ /*СТИЛИЗАЦИЯ РАДИО- КНОПОК---END**************/
+
+ .by-tickets__description {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 26px;
+     color: #FFFFFF;
+     margin-bottom: 14px;
+ }
+
+ .number {
+     text-align: center;
+     background-color: #000000;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 26px;
+     border: 0;
+     margin-left: 15px;
+     color: #FFFFFF;
+ }
+
+ .by-tickets__button {
+     display: flex;
+     justify-content: space-between;
+     border: 3px solid #FFFFFF;
+     width: 150px;
+     height: 50px;
+     margin-bottom: 35px;
+ }
+
+ .by-tickets__minus {
+     background-color: #000000;
+     background-image: url("../img/–.svg");
+     background-repeat: no-repeat;
+     background-position: center;
+     color: #ffffff;
+     border: 0;
+     margin-left: 14px;
+ }
+
+ .by-tickets__plus {
+     background-color: #000000;
+     background-image: url("../img/+.svg");
+     background-repeat: no-repeat;
+     background-position: center;
+     color: #ffffff;
+     /* font-size: 32px; */
+     border: 0;
+     margin-right: 14px;
+ }
+
+ .button_plus {
+     margin-right: 6px;
+ }
+
+ .button_minus {
+     margin-left: 6px;
+ }
+
+ .by-tickets__two-minus {
+     margin-left: -1px;
+ }
+
+ .by-tickets__description-price {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 28px;
+     line-height: 33px;
+     letter-spacing: 1.65px;
+     margin-top: 50px;
+     color: #FFFFFF;
+ }
+
+ .by-now {
+     position: absolute;
+     top: 392px;
+     width: 175px;
+     height: 50px;
+     left: -22px;
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 26px;
+     text-align: center;
+     letter-spacing: 2px;
+     color: #000000;
+     background: #FFFFFF;
+     border-radius: 2px;
+ }
+
+ .by-tickets__amaont {
+     position: relative;
+ }
+
+ /*   TICKETS  STYLES END */
+
+ /* CONTACTS  STYLES START *****************************************************  */
+
+ .contacts-section {
+     background: #ffffff;
+ }
+
+ .by-contacts__list {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .by-contacts__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 36px;
+    color: #000000;
+ }
+
+ .by-contacts__adress {
+     padding-top: 10px;
+ }
+
+ .by-contacts__description {
+     font-family: Roboto;
+     font-style: normal;
+     font-weight: 300;
+     font-size: 22px;
+     line-height: 26px;
+     margin-bottom: 20px;
+     color: #000000;
+ }
+
+ /*   CONTACTS  STYLES END */
+
+ /* FOOTER STYLES START */
+
+ .footer {
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+ }
+
+ .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .footer__logo {
+    width: 340px;
+    height: 150px;
+ }
+
+ .footer__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 366px;
+    height: 150px;
+ }
+
+ .footer__social {
+    display: flex;
+    width: 734px;
+    height: 150px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 15px;
+ }
+
+ .footer__social-link {
+    margin-left: 24px;
+ }
+
+ .footer__item-link {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+ }
